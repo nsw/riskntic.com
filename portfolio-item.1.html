@@ -1,0 +1,80 @@
+---
+layout: default
+images:
+  - images/drag_and_drop_affectation_ef.jpg
+  - images/ref.png
+---
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <div class='mod modBoxedSlider'>
+        <div class='slides'>
+          {% for image in page.images %}
+            <div class="slide">
+              <img src="{{site.url}}/{{image}}" alt="">
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='spacing'></div>
+  <div class='row'>
+    <div class='large-8 columns'>
+      <h3>Le management des risques</h3>
+      <p>
+          Risk’n Tic est un outil de management des risques conforme à l’ ISO27005 et à la méthode nationale EBIOS.
+
+          Industrialiser le management des risques, tel est la démarche que nous vous proposons.
+          
+          Risk’n Tic intègre les référentiels de vos partie prenantes:  PSSI-S, SI Industriels, ISO27002, PIA, Règles d’hygiene du S.I, PCI-DSS, mais aussi des analyses de risques génériques comme celle de l’Enisa  (Cloud Computig, Big Data…), des mesures de l’OSWAP ….. etc …
+          
+          C’est aussi un outil idéal pour le suivi et la mise en œuvre de votre SMSI.
+          
+          Votre SOA ou DDA est directement issue de votre analyse de risques comme le demande la norme iso 27001.
+          Les Analyses de risques sont historisées ce qui permet de démontrer l’efficacité de votre démarche d’amélioration continue.
+      </p>
+      <div class='spacing'></div>
+      <!-- <a class='button small' href='http://themeforest.net/user/honryou/portfolio?ref=honryou' target="_blank">Visit website</a>-->
+      <a class='button small' href='/'>Back to home</a>
+    </div>
+     
+      <!--  <div class='large-4 columns'>
+      <ul class='info'>
+        <li>
+          <strong>Client:</strong>
+          themeforest
+        </li>
+        <li>
+          <strong>Date:</strong>
+          June 2013
+        </li>
+        <li>
+          <div class='spacing'></div>
+          <a href='' title='previous'>
+            <i class='icon-left-open'></i>
+          </a>
+          <a href='portfolio.html' title='back to work list'>
+            <i class='icon-layout'></i>
+          </a>
+          <a href='' title='next'>
+            <i class='icon-right-open'></i>
+          </a>
+        </li>
+      </ul>
+    </div> -->
+  </div>
+  <div class='four spacing'></div>
+</div>
+
+
+<div class='full no-padding' style='background: #111'>
+  <div class='two spacing'></div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <p>©2017 {{site.title}}. All rights reserved.</p>
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div>

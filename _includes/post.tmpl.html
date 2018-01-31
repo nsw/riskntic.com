@@ -1,0 +1,38 @@
+<div class='full'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <div class='mod modBoxedSlider' >
+       <div class='slides'>
+          {% for image in page.images %}
+            <div class="slide" > 
+             <img src="{{site.url}}/{{image}}" alt=""  style="margin:auto;height:350px;">
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='spacing'></div>
+  <div class='row'>
+    <div class=' columns'>
+      <!-- <h3>Risk’n tic propose une démarche globale, itérative, scalable, simple et outillée de management des risques du Système d’Information </h3>
+      <p>
+          Cette démarche vous accompagne dans vos processus de certification et de mise en conformité de votre SI. Risk’n Tic vous accompagne pour développer une stratégie complète de gestion des risques, limiter les pertes financières, protéger votre patrimoine informationnel et l’ image de votre entité Risk’n Tic est une démarche outillée de management des risques pour vous guider vers la certification, l’homologation et la mise en conformité de votre S.I avec les exigences légales et réglementaires.. Risk’n Tic : Un outil de management des risques. Une solution d’analyse d’écart par rapport a des référentiels publics (ANSSI, LPM, IOS27002, PCi-DSS….) ou privés (PSSI interne, plan de contrôle) Une solution de mise en conformité àà la GDPR ( Registre, analyse de d’impact, accountability) L’ export de tableaux de bord analytiques et fractales permet de communiquer sur le traitement des risques vers l’ensemble des acteurs: DSI, RSSI, Direction, Auditeurs, Clients…
+      </p>  -->
+     {% tf {{page.article}} %}
+      <div class='spacing'></div>
+      <a class='button small' href='/posts'>See all articles</a>
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
+
+<div class='full no-padding' style='background: #111'>
+  <div class='two spacing'></div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <p>©2017 {{site.title}}. All rights reserved.</p>
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div>

@@ -1,0 +1,77 @@
+welcome: hello
+
+global:
+  tagline: English
+  about: About
+  twitter: Twitter
+  github: GitHub
+nav:
+  menu: Menu
+  home: Home
+  contact: Contact
+  pricing: Pricing
+  blog: Articles
+  about: About
+  services: Services
+  team: Team
+  work: Work
+  GDPR: GDPR
+slides:
+ - title: Simple Risk Management Solutions
+   tagline: Une interfac simple, rapide et intuitive
+
+default: Blog Default
+fullwidth : Blog Fullwidth
+masonry : All articles
+single: Blog Single
+
+  
+
+achievement:
+  zonetitle: The Achievements
+
+about:
+  zonetitle: Our solutions
+
+partner:
+  zonetitle: Our partners
+
+clientsay:
+  zonetitle: What our clients say
+
+pricing:
+  zonetitle: Pricing Table
+
+works:
+  zonetitle: Our works
+  seemore: See more works
+
+team:
+  zonetitle: Team Members
+
+advantage: 
+  zonetitle: Our advantages
+
+services: 
+  zonetitle: Services
+
+posts:
+   zonetitle: Our recent posts
+   seemore: See more posts
+
+contact:
+  zonetitle: Contact us
+  placeholder:
+    name: Name
+    email: Email
+    subject: Subject
+    msg: Message
+  addr: Address
+  tel: Tel
+  fax: Fax
+  email: Email
+  sendMailBtn: Send us mail
+
+findus:
+  zonetitle: Find us elsewhere
+  
