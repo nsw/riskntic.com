@@ -1,7 +1,7 @@
 ---
 layout: default
 slides:
-  - bg: images/@stock/bg-slide-pc-note.jpg
+  - bg: images/@stock/bg-slide-handshake.jpeg
     title: Risk'n Tic &nbsp;&nbsp;&nbsp;❜
     tagline: Simple Risk Management Solution. Une interface simple, rapide et intuitive ...
     buttons:
@@ -11,7 +11,7 @@ slides:
       - text: purchase now
         class: small boxed
         url: index.html#pricing
-  - bg: images/@stock/bg-slide-handshake.jpeg
+  - bg: images/@stock/bg-slide-10.jpg
     title: Professionel &amp; puissant
     tagline: Risk'n Tic est une solution qui vous fait gagner du temps pour réaliser vos analyses de risques et qui facilite votre communication. Risk'n Tic est un outil de management des risques conforme à l' ISO27005 et à la méthode nationale Ebios.
     buttons:
@@ -130,12 +130,15 @@ members:
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
 
 clients:
-  - ../images/orange_logo.png
-  - ../images/orange_logo.png
-  - ../images/orange_logo.png
-  - ../images/orange_logo.png
-  - ../images/orange_logo.png
-  - ../images/orange_logo.png
+  - ../images/@stock/partner-1.png
+  - ../images/@stock/partner-2.png
+  - ../images/@stock/partner-3.png
+  - ../images/@stock/partner-4.png
+  - ../images/@stock/partner-5.png
+  - ../images/@stock/partner-6.png
+  - ../images/@stock/partner-7.png
+  - ../images/@stock/partner-8.png
+  - ../images/@stock/partner-9.png
 
 posts:
   - title: General Data Protection Regulation.
@@ -291,11 +294,14 @@ socials:
 </div>
 <div class='three spacing'></div>
 
-<div class='full parallax' style='background-image: url(../images/@stock/milestone-bg-4.jpg); color: #fff;'>
-  <div class='row'>
+<div class='parallax' style='background: url(../images/@stock/slide-bg-5.jpeg) no-repeat fixed; background-size:cover; color: #fff;'>
+  <div class='full parallax' style= 'background:rgba(0,0,0,.5);'>
     <div class='large-12 columns'>
       {% include section-header.html class="alt" title_style="color: #fff;" title="advantage" %}
-      <div class='spacing'></div>
+    </div>
+    <div class='row' > 
+        <div class='large-12 columns'>
+        <div class='spacing'></div>
       <p style='color: #ccc;'>
           Homologation, Certification, Conformité, Management des risques ( EBIOS, 27005), Registre CIL/DPO et analyse d'impact    
           Et spécialement pour les PME/TPE, un diagnostic rapide de votre SI par rapport aux 42 mesures d'hygiène informatique de l'ANSSI
@@ -308,10 +314,10 @@ socials:
       <div class='mod modBarGraph'>
         <ul class='bars'>
           <li>
-            {% include bar-graph.html style="color: #fff;" title="Conformité  " percents="84" %}
+            {% include bar-graph.html style="color: #fff;" title="Gain de temps" percents="75" %}
           </li>
           <li>
-            {% include bar-graph.html style="color: #fff;" title="Certification" percents="99" %}
+            {% include bar-graph.html style="color: #fff;" title="Conformité" percents="100" %}
           </li>
         </ul>
       </div>
@@ -320,16 +326,16 @@ socials:
       <div class='mod modBarGraph'>
         <ul class='bars'>
           <li>
-            {% include bar-graph.html style="color: #fff;" title="Rapporting" percents="90" %}
+            {% include bar-graph.html style="color: #fff;" title="Satisfaction client" percents="98" %}
           </li>
           <li>
-            {% include bar-graph.html style="color: #fff;" title="Marketing" percents="66" %}
+            {% include bar-graph.html style="color: #fff;" title="Disponibilité" percents="99.99" %}
           </li>
         </ul>
       </div>
     </div>
   </div>
-  <div class='four spacing'></div>
+  <div class='four spacing'></div></div>
 </div>
 <a id='services'></a>
 <div class='full' style='background: #f5f5f5'>
@@ -352,7 +358,7 @@ socials:
   </div>
   <div class='four spacing'></div>
 </div>
-<div class='full parallax' style='background-image: url(../images/@stock/milestone-bg-3.jpg); color: #fff;'>
+<div class='full parallax' style='background: url(../images/@stock/bg-pc-cafe-dark.png) no-repeat fixed; background-size:cover; color: #fff;'>
   <div class='row'>
     <div class='large-12 columns'>
       {% include section-header.html title="achievement" class="alt" title_style="color: #fff;" %}
@@ -361,7 +367,7 @@ socials:
   </div>
   <div class='row'>
     <div class='medium-3 large-3 columns'>
-      {% include milestone.html title="Projects Completed" from="0" to="69" icon_class="fa fa-folder-open" %}
+      {% include milestone.html title="Analyse de risques" from="0" to="192" icon_class="fa fa-folder-open" %}
     </div>
     <div class='medium-3 large-3 columns'>
       {% include milestone.html title="Cups of coffee offered" from="0" to="726" icon_class="fa fa-coffee" %}
@@ -370,7 +376,7 @@ socials:
       {% include milestone.html title="Happy clients" from="0" to="59" icon_class="fa fa-thumbs-up" %}
     </div>
     <div class='medium-3 large-3 columns'>
-      {% include milestone.html title="Articles Published" from="0" to="21" icon_class="fa fa-file-text" %}
+      {% include milestone.html title="Référentiels" from="0" to="21" icon_class="fa fa-file-text" %}
     </div>
   </div>
   <div class='two spacing'></div>
@@ -380,8 +386,8 @@ socials:
   <div class='row'>
     <div class='large-12 columns'>
       {% include section-header.html title="works" class="alt" %}
-      <div class='spacing'></div>
-      {% tf our_works.md%}
+     <!--  <div class='spacing'></div>
+      {% tf our_works.md%} -->
      <!--  <p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.
       </p> -->
@@ -441,7 +447,7 @@ socials:
 </div>
 
 <!-- what clients say  / grey-->
-<div class='full parallax' style='background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/@stock/slide-bg-5.jpeg) ; background-size:cover;color: #fff;'>
+<!-- <div class='full parallax' style='background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/@stock/slide-bg-5.jpeg) ; background-size:cover;color: #fff;'>
   <div class='row'>
     <div class='large-12 columns'>
       <p class='centered-text'>
@@ -476,7 +482,7 @@ socials:
       </div>
     </div>
   </div> 
-</div>
+</div> -->
 <!--<div class='full no-padding' style='background: #c20b47; color: #fff'>
   <div class='two spacing'></div>
   <div class='mod modCallToAction'>
@@ -546,9 +552,9 @@ socials:
   <div class='row'>
     <div class='large-12 columns'>
       <div class='mod modClients' data-slides_to_show='4'>
-        <div class='clients'>
+        <div class='clients overlay' style='background:rgba(255,255,255,.8)'> 
           {% for client in page.clients %}
-            <div><img width="272" height="180" alt="" src="{{client}}" /></div>
+            <div><img alt="" src="{{client}}" /></div>
           {% endfor %}
         </div>
       </div>
