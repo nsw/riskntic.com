@@ -664,7 +664,7 @@ body.screenshot {
   position: relative;
   overflow: hidden;
   display: block;
-  margin: 0;
+  margin: auto;
   padding: 0;
 }
 .slick-list:focus {
@@ -1483,6 +1483,10 @@ body.screenshot {
 .modClients .slick-slider {
   margin-bottom: 10px;
 }
+.modClients .slick-track div {
+  vertical-align: middle!important;
+}
+
 .modDefaultSlider .sequence {
   height: 650px;
   position: relative;
