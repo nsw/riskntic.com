@@ -85,6 +85,39 @@ ul.shortcode-list i {
   margin-top: -100px;
 }
 
+/*small social for demo 2 */
+.small-social {
+  text-align: center;
+}
+
+.small-social i {
+  box-sizing: content-box;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  /*width: 0.2rem;
+  height: 0.2rem;*/
+  color: #fff;
+  display: inline-block;
+  padding: 8px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color:/* #F9CE06*/ #c20b47;
+  border: 2px solid /* #F9CE06*/ #c20b47;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.small-social i:before {
+  margin: 0;
+}
+.small-social i:hover {
+  border: 2px solid /* #F9CE06*/ #c20b47;
+  background-color: rgba(249, 206, 6, 0);
+}
+
 /*Big social for demo 2 */
 .big-social {
   text-align: center;
@@ -3439,4 +3472,55 @@ body {
   .modFullscreenSlider .fullscreen_slideshow .video_wrap {
     display: none;
   }
+}
+
+.scroll-to-top {
+  display: block;
+  position: fixed;
+  border-radius: px;
+  bottom: 30px;
+  right: 30px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 43px;
+  width: 45px;
+  height: 45px;
+  background: #e90576;
+  /*background: #c20b47;*/ 
+  text-align: center;
+  z-index: 100;
+  cursor: pointer;
+  display: none;
+  transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+}
+.scroll-to-top::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 1;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
+  background: -webkit-radial-gradient(center ellipse, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
+}
+
+div.add-pc-capture::before {
+    content: '';
+    background: url("../images/@stock/pc-with-capture.png") no-repeat;
+    background-position: center center;
+    background-size: 400px;
+    opacity: .9;
+    height: 360px;
+    margin-bottom: -50px;
+    width: 400px;
+    position: absolute;
+    right: -50px;
+    margin-top: 400px;
+    z-index: 0;
+
 }

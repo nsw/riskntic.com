@@ -28,11 +28,29 @@
 </div>
 
 <div class='full no-padding' style='background: #111'>
-  <div class='two spacing'></div>
-  <div class='row'>
-    <div class='large-12 columns'>
-      <p>©2017 {{site.title}}. All rights reserved.</p>
+    <div class='two spacing'></div>
+    <div class='row'>
+      <div class='large-12 columns' style="text-align:center;">
+          <div class='colums'>
+            <img alt="" src="{{site.url}}/images/logo_riskn.png" style="width:210px;"/>
+          <!-- {% for social in page.socials %} 
+          <div class='big-social'><a href='{{social.link_to}}'>
+            <i class='{{social.icon_class}}'></i>
+          </a> 
+        </div>{% endfor %} -->
+        <div class='small-social'><a href='https://fr.linkedin.com/company/riskntic'>
+            <i class='fa fa-linkedin'></i>
+          </a> 
+        </div>
+        </div>
+        <div class='colums'>
+            <a href='{{site.url}}/posts/mention-legale.html' style="border-bottom:#c20b47 dotted 1px;">Termes et Conditions</a>
+          <a href='{{site.url}}/posts/GDPR-pia.html' style="border-bottom:#c20b47 dotted 1px;margin-left:20px;">EU GDPR Détails</a>
+          <a href='{{site.url}}/posts/mention-legale.html' style="border-bottom:#c20b47 dotted 1px;margin-left:20px;">Mention légale</a>
+         </div>
+         <div class="spacing"></div>
+        <p>Copyright©2018 {{site.title}}. All rights reserved. </p> 
+      </div>
     </div>
+    <div class='spacing'></div>
   </div>
-  <div class='spacing'></div>
-</div>

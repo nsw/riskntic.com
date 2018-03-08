@@ -10,10 +10,18 @@
   <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/fontello.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/font-awesome.css" | prepend: site.baseurl }}">
+  <script src="{{ "/javascripts/jquery-2.1.0.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+  <script src="{{ "/javascripts/jquery.nicescroll-3.7.6/jquery.nicescroll.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
   <script src="{{ "/javascripts/libs.js" | prepend: site.baseurl }}" type="text/javascript"></script>
   <script>
     // terrificjs bootstrap
     (function($) {
+      /*$(document).ready(function() {
+        $("body").niceScroll();
+         var $page = $('body');
+        NiceScroll.getjQuery('html');
+        $page.niceScroll({cursorwidth: '10px', cursorcolor: 'red', scrollspped:'100',cursorborder:'1px solid red' }); 
+        });*/
         $(document).ready(function() {
             var $page = $('body');
             var config = {

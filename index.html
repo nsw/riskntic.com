@@ -1,16 +1,16 @@
 ---
 layout: default
 slides:
-  - bg: images/@stock/bg-slide-handshake.jpeg
+  - bg: images/@stock/bg-slide-handshake_reduced.jpeg
     title: Risk'n Tic &nbsp;&nbsp;&nbsp;❜
     tagline: Simple Risk Management Solution. Une interface simple, rapide et intuitive ...
     buttons:
       - text: Nos avantages
         class: small
-        url: index.html#work
-      - text: purchase now
+        url: index.html#advantage
+      - text: Essayez maintenant
         class: small boxed
-        url: index.html#pricing
+        url: index.html#contact
   - bg: images/@stock/bg-slide-10.jpg
     title: Professionel &amp; puissant
     tagline: Risk'n Tic est une solution qui vous fait gagner du temps pour réaliser vos analyses de risques et qui facilite votre communication. Risk'n Tic est un outil de management des risques conforme à l' ISO27005 et à la méthode nationale Ebios.
@@ -130,15 +130,15 @@ members:
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
 
 clients:
-  - ../images/@stock/partner-1.png
-  - ../images/@stock/partner-2.png
-  - ../images/@stock/partner-3.png
-  - ../images/@stock/partner-4.png
-  - ../images/@stock/partner-5.png
-  - ../images/@stock/partner-6.png
-  - ../images/@stock/partner-7.png
-  - ../images/@stock/partner-8.png
-  - ../images/@stock/partner-9.png
+  - ../images/partners/partner-1.png
+  - ../images/partners/partner-2.png
+  - ../images/partners/partner-3.png
+  - ../images/partners/partner-4.png
+  - ../images/partners/partner-5.png
+  - ../images/partners/partner-6.png
+  - ../images/partners/partner-7.png
+  - ../images/partners/partner-8.png
+  - ../images/partners/partner-9.png
 
 posts:
   - title: General Data Protection Regulation.
@@ -272,18 +272,23 @@ socials:
 <a id='about'></a>
 <div class='full'>
   <div class='row'>
-    <div class='large-10 columns large-centered'>
+    <div class='large-10 columns large-centered add-pc-capture'>
       <div class='spacing'></div>
       {% include section-header.html class="alt" title="about" %}
       <div class='spacing'></div>
       <p class='centered-text'>
         <!-- <img alt="" src="../images/GDPR.jpg" style="filter: brightness(0.95);"/> -->
-        <h2 style="font-size:22px;"><img src="../images/red.png" style="width:25px; margin-top:-5px;margin-right:20px;"/> Risk'n Tic aux couleurs de la GDPR <img src="../images/GDPR-2.png" style="border-radius:25px;width:300px;margin-left:60px;"/></h2>
+        <h2 style="font-size:22px;"><img src="../images/red.png" style="width:25px; margin-top:-5px;margin-right:20px;"/> Risk'n Tic aux couleurs de la 
+          <a href='{{site.url}}/posts/GDPR-pia.html' style="border-bottom:1px dotted #c20b47">GDPR</a> 
+          <!-- <img src="../images/GDPR-2.png" style="border-radius:25px;width:300px;margin-left:60px;"/> -->
+        </h2>
       </p>
       <div class='spacing'></div>
-      <div style="background: url(../images/virgule_gd.png) no-repeat; background-position: right center;"> 
-        {% tf intro.md %}
-        {% tf five_points.md %}
+      <!-- <div style="background: url(../images/virgule_gd.png) no-repeat; background-position: right center;">  -->
+        <div style="background: url(../images/virgule_gd.png) no-repeat; background-position: left center;"> 
+        <!-- {% tf intro.md %}
+        {% tf five_points.md %} -->
+        {% tf our_solutions.md %}
       </div>
       <!-- <p class='centered-text' style='font-size: 1.6rem'>
         This is the introduction of your team, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.
@@ -294,6 +299,7 @@ socials:
 </div>
 <div class='three spacing'></div>
 
+<a id='advantage'></a>
 <div class='parallax' style='background: url(../images/@stock/slide-bg-5.jpeg) no-repeat fixed; background-size:cover; color: #fff;'>
   <div class='full parallax' style= 'background:rgba(0,0,0,.5);'>
     <div class='large-12 columns'>
@@ -537,7 +543,7 @@ socials:
 </div>  -->
 
 <!--partner grey-->
-<div class='full parallax' style='background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/@stock/partner.jpg); background-size:cover; color: #fff;'>
+<div class='full parallax' style='background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../images/@stock/partner-bg.jpeg); background-size:cover; color: #fff;'>
   <div class='row'>
     <div class='large-12 columns'>
       {% include section-header.html class="alt" title_style="color: #fff;" title="partner" %}
@@ -552,9 +558,9 @@ socials:
   <div class='row'>
     <div class='large-12 columns'>
       <div class='mod modClients' data-slides_to_show='4'>
-        <div class='clients overlay' style='background:rgba(255,255,255,.8);'> 
+        <div class='clients overlay' style='background:rgba(255,255,255,.5);'> 
           {% for client in page.clients %}
-            <div style="padding:2% 0px 0px 0px;"><img alt="" src="{{client}}" /></div>
+            <div><img alt="" src="{{client}}" style="height:130px;margin:25px auto;opacity:0.85"/></div>
           {% endfor %}
         </div>
       </div>
@@ -652,7 +658,7 @@ socials:
       <div class='two spacing'></div>
     </div>
   </div>
-  <div class='row'>
+  <div class='row' style="width:60%">
    <!--  <div class='medium-8 columns'>
       <div class='form'>
         <div class='row'>
@@ -676,20 +682,50 @@ socials:
       <div class='two spacing'></div>
     </div> -->
     <!-- <div class='medium-4 columns'> -->
-        <div class='medium-12 columns' style="text-align:center;">
+      <!-- <div class='medium-12 columns' style="text-align:center;">
       <div class='contact-details'>
         <h4>{% t contact.addr %} : </h4>
         <p> SAS 823 360 177 0013 – Neuilly Plaisance</p>
         <h4>{% t contact.tel %} :</h4>
         <p>+33 (0) 6 71 76 28 46</p>
-       <!--  <h4>{% t contact.fax %} :</h4>
-        <p>+6102 236338 5456</p> -->
         <h4>{% t contact.email %} :</h4>
         <p>contact@riskntic.com</p>
       </div>
       <a class='button small' href="mailto:contact@riskntic.com">{% t contact.sendMailBtn %}</a>
-    </div>
+    </div> -->
+  
+    <div class='medium-6 columns' >
+        <div class='contact-details '>
+   <!--        <div class='row'>
+            <div class='medium-6 columns'><h4>{% t contact.addr %} : </h4>
+            </div>
+            <div class='medium-6 columns'><p> SAS 823 360 177 0013 – Neuilly Plaisance</p>
+            </div>
+          </div> -->
+          <h4>{% t contact.addr %} :  <span style='color:#999;font-weight:normal'> SAS 823 360 177 0013 – Neuilly Plaisance</span></h4>
+         <!--  <p> SAS 823 360 177 0013 – Neuilly Plaisance</p> -->
+         <div class="spacing"></div>
+          <h4>{% t contact.tel %} :  <span style='color:#999;font-weight:normal'>+33 (0) 6 71 76 28 46</span> </h4>
+         <!--  <p>+33 (0) 6 71 76 28 46</p> -->
+         <div class="spacing"></div>
+          <h4>{% t contact.email %} : <span style='color:#999;font-weight:normal'>contact@riskntic.com</span> </h4>
+        <!--   <p>contact@riskntic.com</p> -->
+        </div>
+       <!--  <a class='button small' href="mailto:contact@riskntic.com">{% t contact.sendMailBtn %}</a> -->
+      </div>
+      <div class='medium-4 columns' style="padding-top:40px;">
+         <!--  <div class='contact-details '>
+            <h4>{% t contact.addr %} : </h4>
+            <p> SAS 823 360 177 0013 – Neuilly Plaisance</p>
+            <h4>{% t contact.tel %} :</h4>
+            <p>+33 (0) 6 71 76 28 46</p>
+            <h4>{% t contact.email %} :</h4>
+            <p>contact@riskntic.com</p>
+          </div> -->
+          <a class='button small' href="mailto:contact@riskntic.com">{% t contact.sendMailBtn %}</a>
+        </div>
   </div>
+</div>
 </div>
 <div class='two spacing'></div>
 <div class='full parallax' style='background-image: url(../images/@stock/big-socials-bg.jpg); color: #fff;'>
@@ -719,8 +755,28 @@ socials:
   <div class='two spacing'></div>
   <div class='row'>
     <div class='large-12 columns' style="text-align:center;">
-      <p>  <a href='{{site.url}}/posts/mention-legale.html' style="margin-right:30px;border-bottom:#c20b47 dotted 1px;">Mention légale</a> Copyright©2017 {{site.title}}. All rights reserved. </p> 
+        <div class='colums'>
+          <img alt="" src="{{site.url}}/images/logo_riskn.png" style="width:170px;"/>
+       <!--  {% for social in page.socials %} 
+        <div class='big-social'><a href='{{social.link_to}}'>
+          <i class='{{social.icon_class}}'></i>
+        </a> 
+      </div>{% endfor %} -->
+      <div class='small-social'><a href='https://fr.linkedin.com/company/riskntic'>
+        <i class='fa fa-linkedin'></i>
+      </a> 
+    </div>
+      </div>
+      <div class='colums'>
+          <a href='{{site.url}}/posts/mention-legale.html' style="border-bottom:#c20b47 dotted 1px;">Termes et Conditions</a>
+        <a href='{{site.url}}/posts/GDPR-pia.html' style="border-bottom:#c20b47 dotted 1px;margin-left:20px;">EU GDPR Détails</a>
+        <a href='{{site.url}}/posts/mention-legale.html' style="border-bottom:#c20b47 dotted 1px;margin-left:20px;">Mention légale</a>
+       </div>
+       <div class="spacing"></div>
+      <p>Copyright©2018 {{site.title}}. All rights reserved. </p> 
     </div>
   </div>
   <div class='spacing'></div>
+  <a href='{{site.url}}/index.html#top'><div class='scroll-to-top' style='display:block'><i class='fa fa-angle-up'></i></div></a>
 </div>
+
