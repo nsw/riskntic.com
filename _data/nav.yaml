@@ -10,18 +10,18 @@
 - name: work
   path: "#work"
   section_id: work
-- name: team
-  path: "#team"
-  section_id: Team
-- name: pricing
-  path: "#pricing"
-  section_id: pricing
+#- name: team
+ # path: "#team"
+  #section_id: Team
+#- name: pricing
+ # path: "#pricing"
+  #section_id: pricing
 - name: contact
   path: "#contact"
   section_id: contact
-- name: blog
-  path: "#posts"
-  section_id: blog
-  children:
-    - name: masonry
-      path: posts/
+#- name: blog
+ # path: "#posts"
+  #section_id: blog
+  #children:
+   # - name: masonry
+    #  path: posts/

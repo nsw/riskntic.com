@@ -11,7 +11,7 @@ nav:
   contact: Contact
   pricing: Pricing
   blog: Articles
-  about: Solutions
+  about: Solution
   services: Services
   team: Team
   work: Work
@@ -31,7 +31,7 @@ achievement:
   zonetitle: The Achievements
 
 about:
-  zonetitle: Our solutions
+  zonetitle: Our solution
 
 partner:
   zonetitle: Our partners

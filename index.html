@@ -7,30 +7,36 @@ slides:
     buttons:
       - text: Nos avantages
         class: small
-        url: index.html#advantage
+        url: '#advantage'
       - text: Essayez maintenant
         class: small boxed
-        url: index.html#contact
+        url: '#contact'
   - bg: images/@stock/bg-slide-10.jpg
     title: Professionel &amp; puissant
-    tagline: Risk'n Tic est une solution qui vous fait gagner du temps pour réaliser vos analyses de risques et qui facilite votre communication. Risk'n Tic est un outil de management des risques conforme à l' ISO27005 et à la méthode nationale Ebios.
+    tagline: Gagner du temps pour réaliser vos analyses de risques, faciliter votre communication.
     buttons:
-      - text: Purchase now
+      - text: Nos avantages
         class: small
-        url: http://themeforest.net/user/honryou/portfolio?ref=honryou
-      - text: View features
-        class: boxed small
-        url: http://themeforest.net/user/honryou/portfolio?ref=honryou
-  - bg: images/@stock/slide-bg-8.jpeg
-    title: Always have a dream
-    tagline: It is very quick to build a website with this theme
-    buttons:
-    - text: Purchase now
-      class: small
-      url: http://themeforest.net/user/honryou/portfolio?ref=honryou
-    - text: View features
-      class: boxed small
-      url: http://themeforest.net/user/honryou/portfolio?ref=honryou
+        url: '#advantage'
+      - text: Essayez maintenant
+        class: small boxed
+        url: '#contact'
+     # - text: Purchase now
+       # class: small
+        #url: http://themeforest.net/user/honryou/portfolio?ref=honryou
+      #- text: View features
+       # class: boxed small
+       # url: http://themeforest.net/user/honryou/portfolio?ref=honryou
+  #- bg: images/@stock/slide-bg-8.jpeg
+   # title: Always have a dream
+    #tagline: It is very quick to build a website with this theme
+    #buttons:
+    #- text: Purchase now
+     # class: small
+     # url: http://themeforest.net/user/honryou/portfolio?ref=honryou
+    #- text: View features
+     # class: boxed small
+     # url: http://themeforest.net/user/honryou/portfolio?ref=honryou
 
 works:
   - image: ../images/rapport-ppt.png
@@ -242,13 +248,13 @@ socials:
           {% assign style = '' %}
         {% endif %}
 
-        <li class='frame centered-text {{style}}'>
+        <li class='frame centered-text {{style}}' >
           <h1>{{slide.title}}</h1>
-          <p>{{slide.tagline}}</p>
+          <p style="text-align: center; ">{{slide.tagline}}</p>
           <div class='two spacing'></div>
           <div class='buttons-wrapper'>
             {% for button in slide.buttons %}
-              <a class='button {{button.class}}' href='{{site.url}}/{{button.url}}'>{{button.text}}</a>
+              <a class='button {{button.class}} link-btn' href="{{button.url}}">{{button.text}}</a>
             {% endfor %}
           </div>
           {% if slide.videos %}
@@ -279,7 +285,7 @@ socials:
       <p class='centered-text'>
         <!-- <img alt="" src="../images/GDPR.jpg" style="filter: brightness(0.95);"/> -->
         <h2 style="font-size:22px;"><img src="../images/red.png" style="width:25px; margin-top:-5px;margin-right:20px;"/> Risk'n Tic aux couleurs de la 
-          <a href='{{site.url}}/posts/GDPR-pia.html' style="border-bottom:1px dotted #c20b47">GDPR</a> 
+          <a href='{{site.url}}/posts/GDPR-pia.html' style="border-bottom:1px dotted #c20b47">GDPR</a>
           <!-- <img src="../images/GDPR-2.png" style="border-radius:25px;width:300px;margin-left:60px;"/> -->
         </h2>
       </p>
@@ -300,7 +306,7 @@ socials:
 <div class='three spacing'></div>
 
 <a id='advantage'></a>
-<div class='parallax' style='background: url(../images/@stock/slide-bg-5.jpeg) no-repeat fixed; background-size:cover; color: #fff;'>
+<div id='avantage-panel' class='parallax' style='background: url(../images/@stock/slide-bg-5.jpeg) no-repeat fixed; background-size:cover; color: #fff;'>
   <div class='full parallax' style= 'background:rgba(0,0,0,.5);'>
     <div class='large-12 columns'>
       {% include section-header.html class="alt" title_style="color: #fff;" title="advantage" %}
@@ -364,7 +370,7 @@ socials:
   </div>
   <div class='four spacing'></div>
 </div>
-<div class='full parallax' style='background: url(../images/@stock/bg-pc-cafe-dark.png) no-repeat fixed; background-size:cover; color: #fff;'>
+<!--<div class='full parallax' style='background: url(../images/@stock/bg-pc-cafe-dark.png) no-repeat fixed; background-size:cover; color: #fff;'>
   <div class='row'>
     <div class='large-12 columns'>
       {% include section-header.html title="achievement" class="alt" title_style="color: #fff;" %}
@@ -386,7 +392,7 @@ socials:
     </div>
   </div>
   <div class='two spacing'></div>
-</div>
+</div>-->
 <a id='work'></a>
 <div class='full'>
   <div class='row'>
@@ -442,14 +448,14 @@ socials:
     </div>
   </div>
   <div class='three spacing'></div>
-  <div class='row'>
-    <div class='large-12 columns'>
-      <p class='centered-text'>
-        <a class='button' href='#'>{% t works.seemore %}</a>
-      </p>
-    </div>
-  </div>
-  <div class='four spacing'></div>
+  <!--<div class='row'>-->
+    <!--<div class='large-12 columns'>-->
+      <!--<p class='centered-text'>-->
+        <!--<a class='button' href='#'>{% t works.seemore %}</a>-->
+      <!--</p>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div class='four spacing'></div>-->
 </div>
 
 <!-- what clients say  / grey-->
@@ -543,7 +549,7 @@ socials:
 </div>  -->
 
 <!--partner grey-->
-<div class='full parallax' style='background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../images/@stock/partner-bg.jpeg); background-size:cover; color: #fff;'>
+<div class='full parallax' style='background: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),url(../images/@stock/partner-bg.jpeg); background-size:cover; color: #fff;'>
   <div class='row'>
     <div class='large-12 columns'>
       {% include section-header.html class="alt" title_style="color: #fff;" title="partner" %}
@@ -558,7 +564,7 @@ socials:
   <div class='row'>
     <div class='large-12 columns'>
       <div class='mod modClients' data-slides_to_show='4'>
-        <div class='clients overlay' style='background:rgba(255,255,255,.5);'> 
+        <div class='clients overlay' style='background:rgba(255,255,255,0);'> 
           {% for client in page.clients %}
             <div><img alt="" src="{{client}}" style="height:130px;margin:25px auto;opacity:0.85"/></div>
           {% endfor %}
@@ -728,35 +734,37 @@ socials:
 </div>
 </div>
 <div class='two spacing'></div>
-<div class='full parallax' style='background-image: url(../images/@stock/big-socials-bg.jpg); color: #fff;'>
-  <div class='row'>
-    <div class='large-12 columns'>
-      {% include section-header.html class="alt" title="findus" title_style="color: #fff;" %}
-      <div class='two spacing'></div>
-    </div>
-    {% for social in page.socials %}
-      <!-- <div class='medium-3 columns'> -->
-        <div class='large-12 columns'> 
-        <div class='big-social'>
-          <a href='{{social.link_to}}'>
-            <i class='{{social.icon_class}}'></i>
-          </a>
-          <h4 style='color: #fff'>{{social.title}}</h4>
-          <p>{{social.text}}</p>
-        </div>
-        <div class='two spacing'></div>
-      </div>
-    {% endfor %}
-  </div>
+<!--<div class='full parallax' style='background-image: url(../images/@stock/big-socials-bg.jpg); color: #fff;'>-->
+  <!--<div class='row'>-->
+    <!--<div class='large-12 columns'>-->
+      <!--{% include section-header.html class="alt" title="findus" title_style="color: #fff;" %}-->
+      <!--<div class='two spacing'></div>-->
+    <!--</div>-->
+    <!--{% for social in page.socials %}-->
+      <!--&lt;!&ndash; <div class='medium-3 columns'> &ndash;&gt;-->
+        <!--<div class='large-12 columns'> -->
+        <!--<div class='big-social'>-->
+          <!--<a href='{{social.link_to}}'>-->
+            <!--<i class='{{social.icon_class}}'></i>-->
+          <!--</a>-->
+          <!--<h4 style='color: #fff'>{{social.title}}</h4>-->
+          <!--<p>{{social.text}}</p>-->
+        <!--</div>-->
+        <!--<div class='two spacing'></div>-->
+      <!--</div>-->
+    <!--{% endfor %}-->
+  <!--</div>-->
  <!--  <div class='four spacing'></div>
   <div class='two spacing'></div> -->
 </div>
-<div class='full no-padding' style='background: #111'>
+<!-- <div class='full no-padding' style='background:#222'> -->
+<div class='full no-padding' style='background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../images/@stock/big-socials-bg.jpg); background-size:cover; background-attachment: fixed;background-position: center top;color: #fff;'>
+   <div>
   <div class='two spacing'></div>
   <div class='row'>
     <div class='large-12 columns' style="text-align:center;">
         <div class='colums'>
-          <img alt="" src="{{site.url}}/images/logo_riskn.png" style="width:170px;"/>
+          <img alt="" src="{{site.url}}/images/logo_riskn_white.png" style="width:100px;height:26px"/>
        <!--  {% for social in page.socials %} 
         <div class='big-social'><a href='{{social.link_to}}'>
           <i class='{{social.icon_class}}'></i>
@@ -768,15 +776,15 @@ socials:
     </div>
       </div>
       <div class='colums'>
-          <a href='{{site.url}}/posts/mention-legale.html' style="border-bottom:#c20b47 dotted 1px;">Termes et Conditions</a>
-        <a href='{{site.url}}/posts/GDPR-pia.html' style="border-bottom:#c20b47 dotted 1px;margin-left:20px;">EU GDPR Détails</a>
-        <a href='{{site.url}}/posts/mention-legale.html' style="border-bottom:#c20b47 dotted 1px;margin-left:20px;">Mention légale</a>
+         <!--  <a href='{{site.url}}/posts/mention-legale.html' style="border-bottom:#c20b47 dotted 1px;font-size:13px">Termes et Conditions</a> -->
+        <a href='{{site.url}}/posts/GDPR-pia.html' style="border-bottom:#e90576 dotted 1px;margin-left:20px;font-size:13px">EU GDPR Détails</a>
+        <a href='{{site.url}}/posts/mention-legale.html' style="border-bottom:#e90576 dotted 1px;margin-left:20px;font-size:13px">Mention légale</a>
        </div>
        <div class="spacing"></div>
-      <p>Copyright©2018 {{site.title}}. All rights reserved. </p> 
+      <p>Copyright©2018 {{site.title}}. Tout droit réservé.</p> 
     </div>
-  </div>
+  </div></div>
   <div class='spacing'></div>
-  <a href='{{site.url}}/index.html#top'><div class='scroll-to-top' style='display:block'><i class='fa fa-angle-up'></i></div></a>
+  <a class='link-btn' href='#'><div class='scroll-to-top' style='display:block'><i class='fa fa-angle-up'></i></div></a>
 </div>
 
