@@ -1,7 +1,8 @@
 ---
 layout: default
 slides:
-  - bg: images/@stock/bg-slide-handshake_reduced.jpeg
+  # - bg: images/@stock/bg-slide-handshake_reduced.jpeg
+  - bg: images/@stock/slide-bg-1-min.jpeg
     title: Risk'n Tic &nbsp;&nbsp;&nbsp;❜
     tagline: Simple Risk Management Solution. Une interface simple, rapide et intuitive ...
     buttons:
@@ -11,7 +12,8 @@ slides:
       - text: Essayez maintenant
         class: small boxed
         url: '#contact'
-  - bg: images/@stock/bg-slide-10.jpg
+  # - bg: images/@stock/bg-slide-10.jpg
+  - bg: images/@stock/bg-slide-handshake_reduced.jpeg
     title: Professionel &amp; puissant
     tagline: Gagner du temps pour réaliser vos analyses de risques, faciliter votre communication.
     buttons:
@@ -39,46 +41,46 @@ slides:
      # url: http://themeforest.net/user/honryou/portfolio?ref=honryou
 
 works:
-  - image: ../images/rapport-ppt.png
-    title: Canned Bros
-    link_to: portfolio-item.2.html
-    class: rapport
-    desc: Design &amp; Development
-  - image: ../images/pia1.png
-    title: Hale
-    link_to: portfolio-item.2.html
-    class: rapport
-    desc: Design &amp; Development
-  - image: ../images/rapport-40.png
-    title: A beautiful day
-    link_to: portfolio-item.2.html
-    class: rapport
-    desc: Design &amp; Development
-  - image: ../images/rapport-27001.png
-    title: Flower Book
-    link_to: portfolio-item.2.html
-    class: rapport
-    desc: Design &amp; Development  
-  - image: ../images/drag_and_drop_affectation_ef_small.gif
-    title: Drag and drop affectation
-    link_to: portfolio-item.1.html
+  - image: ../images/capture_appli/cap-1.png
+    title: Suivi de la mise en œuvre 
+    link_to: ./posts/capture-detail.1.html
     class: logiciel
-    desc: Design &amp; Development
-  - image: ../images/ref.png
-    title: Le management des risques
-    link_to: portfolio-item.1.html
+    desc:  de la gouvernance GDPR ( Label CNIL) 
+  - image: ./images/capture_appli/cap-2.png
+    title: Analyse d’impact (PIA)
+    link_to: ./posts/portfolio-item.tmpl.html
     class: logiciel
-    desc: Design &amp; Development
-  - image: ../images/compteur.png
-    title: Am I cute
-    link_to: portfolio-item.html
+    desc: et suivi de plan d’actions 
+  - image: ./images/capture_appli/cap-3.png
+    title: Une interface entièrement paramétrable 
+    link_to: ./posts/portfolio-item.tmpl.html
+    class: logiciel
+    desc: proposant un éventail de référentiel (ISO, SecNumCloud, Réf ANSSI, NIST, GDPR, Industrie…) et la possibilité de les mixer d’un simple clic.
+  - image: ./images/capture_appli/cap4.png
+    title: Un gestion fine des habilitations  
+    link_to: ./posts/portfolio-item.tmpl.html
+    class: logiciel
+    desc: en lecture et écriture sur chaque périmètre      
+  - image: ./images/capture_appli/cap3.png
+    title: Etat d’avancement   
+    link_to: ./posts/portfolio-item.tmpl.html
+    class: rapport
+    desc: du plan d’action par chapitre.
+  - image: ./images/capture_appli/cap1.png
+    title: Etat d’avancement  
+    link_to: ./posts/portfolio-item.tmpl.html
+    class: rapport
+    desc: de la mise en œuvre du Label Cnil  
+  - image: ./images/capture_appli/cap2.png
+    title: Matrice des risques
+    link_to: ./posts/portfolio-item.tmpl.html
+    class: rapport
+    desc: bruts, courants re-calculés par rapport à l’avancé du plan d’actions, et résiduels cibles pour les PIA, La LPM, Votre SMSI. 
+  - image: ./images/capture_appli/cap-8.1.png
+    title: Des rapports complets
+    link_to: ./posts/portfolio-item.tmpl.html
     class: dashboard
-    desc: Design &amp; Development
-  - image: ../images/@stock/one-page-work-4.jpg
-    title: Umbrella
-    link_to: portfolio-item.html
-    class: development
-    desc: Design &amp; Development
+    desc:  montrant la couverture des besoins de sécurité des processus métiers
 
 testimonials:
   - quote: Reprehenderit eos et non et ut eum reprehenderit quis sequi quia vel repellendus id. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est.
@@ -260,7 +262,7 @@ socials:
           {% if slide.videos %}
             <div class='video_image_touch' style='background-image: url({{slide.bg}});'></div>
             <div class='video_wrap'>
-              <div class='overlay' style='background: #000000;opacity: 0.7;'></div>
+              <div class='overlay' style='background: #000000;opacity: 0.5;'></div>
               <video autoplay=' ' class='bg_video' loop=' ' muted=' ' preload='auto'>
                 {% for video in slide.videos %}
                   <source src='{{video.url}}' type='video/{{video.type}}'>
@@ -411,11 +413,11 @@ socials:
               <a data-cat='all' href='#'>All</a>
             </li>
             <li>
-              <a data-cat='logiciel' href='#'>Logiciels</a>
+              <a data-cat='logiciel' href='#'>Logiciel</a>
             </li>
-            <li>
-              <a data-cat='rapport' href='#'>Rapports</a>
-            </li>
+             <li>
+              <a data-cat='rapport' href='#'>Rapporting</a>
+            </li> 
             <li>
               <a data-cat='dashboard' href='#'>Dashboard</a>
             </li>
@@ -429,11 +431,11 @@ socials:
         </div>
         <ul class='gallery large-block-grid-4 medium-block-grid-3 seperated small-block-grid-2'>
           {% for work in page.works %}
-            <li class='{{work.class}}'>
-              <a href='{{work.link_to}}' style="border:1px #e0e0E0 solid">
-                <img width="600" height="500" alt="" src="{{work.image}}" />
+            <li class='{{work.class}}' >
+              <a href='{{work.link_to}}' style="border:1px #e0e0E0 solid;background:grey;">
+                <img width="600" height="500" alt="" src="{{work.image}}"/>
                <!--  <div class='overlay' style='background: rgba(143, 221, 115, 0.8);'> -->
-                  <div class='overlay' style='background: #e9a6bd;'>
+                  <div class='overlay' style='background:  THISTLE;'>
                   
                   <div class='thumb-info'>
                     <h3>{{work.title}}</h3>
@@ -549,7 +551,7 @@ socials:
 </div>  -->
 
 <!--partner grey-->
-<div class='full parallax' style='background: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),url(../images/@stock/partner-bg.jpeg); background-size:cover; color: #fff;'>
+<div class='full parallax' style='background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/@stock/partner-bg.jpeg); background-size:cover; background-attachment:fixed; color: #fff;'>
   <div class='row'>
     <div class='large-12 columns'>
       {% include section-header.html class="alt" title_style="color: #fff;" title="partner" %}
@@ -566,7 +568,7 @@ socials:
       <div class='mod modClients' data-slides_to_show='4'>
         <div class='clients overlay' style='background:rgba(255,255,255,0);'> 
           {% for client in page.clients %}
-            <div><img alt="" src="{{client}}" style="height:130px;margin:25px auto;opacity:0.85"/></div>
+            <div><img alt="" src="{{client}}" style="height:130px;margin:20px auto;opacity:0.9"/></div>
           {% endfor %}
         </div>
       </div>
@@ -758,33 +760,5 @@ socials:
   <div class='two spacing'></div> -->
 </div>
 <!-- <div class='full no-padding' style='background:#222'> -->
-<div class='full no-padding' style='background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../images/@stock/big-socials-bg.jpg); background-size:cover; background-attachment: fixed;background-position: center top;color: #fff;'>
-   <div>
-  <div class='two spacing'></div>
-  <div class='row'>
-    <div class='large-12 columns' style="text-align:center;">
-        <div class='colums'>
-          <img alt="" src="{{site.url}}/images/logo_riskn_white.png" style="width:100px;height:26px"/>
-       <!--  {% for social in page.socials %} 
-        <div class='big-social'><a href='{{social.link_to}}'>
-          <i class='{{social.icon_class}}'></i>
-        </a> 
-      </div>{% endfor %} -->
-      <div class='small-social'><a href='https://fr.linkedin.com/company/riskntic'>
-        <i class='fa fa-linkedin'></i>
-      </a> 
-    </div>
-      </div>
-      <div class='colums'>
-         <!--  <a href='{{site.url}}/posts/mention-legale.html' style="border-bottom:#c20b47 dotted 1px;font-size:13px">Termes et Conditions</a> -->
-        <a href='{{site.url}}/posts/GDPR-pia.html' style="border-bottom:#e90576 dotted 1px;margin-left:20px;font-size:13px">EU GDPR Détails</a>
-        <a href='{{site.url}}/posts/mention-legale.html' style="border-bottom:#e90576 dotted 1px;margin-left:20px;font-size:13px">Mention légale</a>
-       </div>
-       <div class="spacing"></div>
-      <p>Copyright©2018 {{site.title}}. Tout droit réservé.</p> 
-    </div>
-  </div></div>
-  <div class='spacing'></div>
-  <a class='link-btn' href='#top'><div class='scroll-to-top' style='display:block'><i class='fa fa-angle-up'></i></div></a>
-</div>
-
+  
+{% include page-footer.html %}
