@@ -31,7 +31,7 @@ sass:
 # Jekyll-Assets configuration
 #
 source_maps: true # false on JEKYLL_ENV=production
-destination: "/assets"
+destination: "./target"
 compression: true
 
 
