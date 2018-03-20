@@ -12,6 +12,7 @@ slides:
       - text: Essayez maintenant
         class: small boxed
         url: '#contact'
+    bgclass: bg-class-slide-1
   # - bg: images/@stock/bg-slide-10.jpg
   - bg: images/@stock/bg-slide-handshake_reduced.jpeg
     title: Professionel &amp; puissant
@@ -23,6 +24,7 @@ slides:
       - text: Essayez maintenant
         class: small boxed
         url: '#contact'
+    bgclass: bg-class-slide-2
      # - text: Purchase now
        # class: small
         #url: http://themeforest.net/user/honryou/portfolio?ref=honryou
@@ -45,41 +47,41 @@ works:
     title: Suivi de la mise en œuvre 
     link_to: ./posts/capture-detail.1.html
     class: logiciel
-    desc:  de la gouvernance GDPR ( Label CNIL) 
+    desc:  de la gouvernance GDPR (Label CNIL) 
   - image: ./images/capture_appli/cap-2.png
     title: Analyse d’impact (PIA)
-    link_to: ./posts/portfolio-item.tmpl.html
+    link_to: ./posts/capture-detail.2.html
     class: logiciel
-    desc: et suivi de plan d’actions 
+    desc: 
   - image: ./images/capture_appli/cap-3.png
     title: Une interface entièrement paramétrable 
-    link_to: ./posts/portfolio-item.tmpl.html
+    link_to: ./posts/capture-detail.3.html
     class: logiciel
-    desc: proposant un éventail de référentiel (ISO, SecNumCloud, Réf ANSSI, NIST, GDPR, Industrie…) et la possibilité de les mixer d’un simple clic.
+    desc: proposant un éventail de référentiel
   - image: ./images/capture_appli/cap4.png
     title: Un gestion fine des habilitations  
-    link_to: ./posts/portfolio-item.tmpl.html
+    link_to: ./posts/capture-detail.4.html
     class: logiciel
     desc: en lecture et écriture sur chaque périmètre      
   - image: ./images/capture_appli/cap3.png
     title: Etat d’avancement   
-    link_to: ./posts/portfolio-item.tmpl.html
-    class: rapport
+    link_to: ./posts/capture-detail.5.html
+    class: dashboard
     desc: du plan d’action par chapitre.
   - image: ./images/capture_appli/cap1.png
     title: Etat d’avancement  
-    link_to: ./posts/portfolio-item.tmpl.html
-    class: rapport
+    link_to: ./posts/capture-detail.6.html
+    class: dashboard
     desc: de la mise en œuvre du Label Cnil  
   - image: ./images/capture_appli/cap2.png
     title: Matrice des risques
-    link_to: ./posts/portfolio-item.tmpl.html
-    class: rapport
-    desc: bruts, courants re-calculés par rapport à l’avancé du plan d’actions, et résiduels cibles pour les PIA, La LPM, Votre SMSI. 
+    link_to: ./posts/capture-detail.7.html
+    class: dashboard
+    desc: 
   - image: ./images/capture_appli/cap-8.1.png
     title: Des rapports complets
-    link_to: ./posts/portfolio-item.tmpl.html
-    class: dashboard
+    link_to: ./posts/capture-detail.8.html
+    class: rapport
     desc:  montrant la couverture des besoins de sécurité des processus métiers
 
 testimonials:
@@ -260,7 +262,7 @@ socials:
             {% endfor %}
           </div>
           {% if slide.videos %}
-            <div class='video_image_touch' style='background-image: url({{slide.bg}});'></div>
+           <div class='video_image_touch' style='background-image: url({{slide.bg}});'></div> 
             <div class='video_wrap'>
               <div class='overlay' style='background: #000000;opacity: 0.5;'></div>
               <video autoplay=' ' class='bg_video' loop=' ' muted=' ' preload='auto'>
@@ -270,7 +272,8 @@ socials:
               </video>
             </div>
           {% else %}
-            <div class='bg' style='background-image: url({{slide.bg}});filter:brightness(0.8)'></div>
+            <!-- <div class='bg' style='background-image: url({{slide.bg}});filter:brightness(0.8)'></div> -->
+            <div class='bg {{slide.bgclass}}' style='filter:brightness(.8)'></div>
           {% endif %}
         </li>
       {% endfor %}
@@ -293,11 +296,13 @@ socials:
       </p>
       <div class='spacing'></div>
       <!-- <div style="background: url(../images/virgule_gd.png) no-repeat; background-position: right center;">  -->
-        <div style="background: url(../images/virgule_gd.png) no-repeat; background-position: left center;"> 
+        <div class="intro-bg"> 
+            <img src='../images/@stock/pc-with-capture.png' align='right' width="400" style="margin-right:10px">
         <!-- {% tf intro.md %}
         {% tf five_points.md %} -->
         {% tf our_solutions.md %}
       </div>
+
       <!-- <p class='centered-text' style='font-size: 1.6rem'>
         This is the introduction of your team, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.
       </p> -->
@@ -360,14 +365,30 @@ socials:
     </div>
   </div>
   <div class='row'>
-    <div class='large-12 columns'>
-      <div class='mod modBoxedTextSlider'>
+    <div class='medium-4 columns'>
+      <div class='mod modBoxedTextSliderStatic'>
         <div class='boxes'>
           {% include box.html class="fa fa-cloud" title="SAAS" text="Grâce à l’hébergement en mode Software as a Service (SaaS), vous accédez où et quand vous voulez à vos données et analyses, 24h/24 – 7h/7, via une simple page web et depuis n’importe quel navigateur. Vos analyses de risques sont toujours disponibles et vous bénéficiez de toutes nos mises à jour et ajout de fonctionnalités." %}
-          {% include box.html class="fa fa-compass" title="On Premise" text="Intégration de Risk’n tic sur un serveur hébergé en Interne: Nous vous aidons à intégrer Risk’n Tic dans votre SI. Vous bénéficiez d’un support via VPN ou sur Site et des mises à jour régulières. Contactez-Nous, ensemble nous étudierons la meilleur solution pour intégrer Risk’n Tic dans votre S.I" %}
-          {% include box.html class="fa fa-plug" title="Intégration" text="Vous souhaitez des développements spécifiques ! Pour reliez Risk’n Tic à votre SI, Annuaire, Base de données, LDAP, etc…. Réliez Risk’n Tic à votre MDB, intégrer vos référentiels et vos Analyse de risques. Notre équipe de développement proposera une solution simple et efficace pour répondre à votre besoin." %}
+        
         </div>
       </div>
+    </div>
+      <div class='medium-4 columns'>
+      <div class='mod modBoxedTextSliderStatic'>
+          <div class='boxes'>
+            
+            {% include box.html class="fa fa-compass" title="On Premise" text="Intégration de Risk’n tic sur un serveur hébergé en Interne: Nous vous aidons à intégrer Risk’n Tic dans votre SI. Vous bénéficiez d’un support via VPN ou sur Site et des mises à jour régulières. Contactez-Nous, ensemble nous étudierons la meilleur solution pour intégrer Risk’n Tic dans votre S.I" %}
+            
+          </div>
+        </div>
+        </div>
+        <div class='medium-4 columns'>
+        <div class='mod modBoxedTextSliderStatic'>
+            <div class='boxes'>
+              {% include box.html class="fa fa-plug" title="Intégration" text="Vous souhaitez des développements spécifiques ! Pour reliez Risk’n Tic à votre SI, Annuaire, Base de données, LDAP, etc…. Réliez Risk’n Tic à votre MDB, intégrer vos référentiels et vos Analyse de risques. Notre équipe de développement proposera une solution simple et efficace pour répondre à votre besoin." %}
+            </div>
+          </div>
+          </div>
     </div>
   </div>
   <div class='four spacing'></div>
@@ -416,7 +437,7 @@ socials:
               <a data-cat='logiciel' href='#'>Logiciel</a>
             </li>
              <li>
-              <a data-cat='rapport' href='#'>Rapporting</a>
+              <a data-cat='rapport' href='#'>Reporting</a>
             </li> 
             <li>
               <a data-cat='dashboard' href='#'>Dashboard</a>
@@ -435,7 +456,7 @@ socials:
               <a href='{{work.link_to}}' style="border:1px #e0e0E0 solid;background:grey;">
                 <img width="600" height="500" alt="" src="{{work.image}}"/>
                <!--  <div class='overlay' style='background: rgba(143, 221, 115, 0.8);'> -->
-                  <div class='overlay' style='background:  THISTLE;'>
+                  <div class='overlay' style='background:  THISTLE; filter:opacity(.95)'>
                   
                   <div class='thumb-info'>
                     <h3>{{work.title}}</h3>

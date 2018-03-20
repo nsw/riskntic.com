@@ -655,7 +655,7 @@ form input.error, form textarea.error {
   -o-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  background: /*#DB0A5B/*#C20b47*/*/#e90576 ;
+  background: /*#DB0A5B/*#C20b47*/#e90576 ;
 }
 #footer input.email-address {
   padding: 5px 15px;
@@ -1028,6 +1028,35 @@ body.screenshot {
 }
 
 /* Slider */
+
+/* slider image responsive */
+
+
+div.bg-class-slide-1 {
+  background-image: url('../images/@stock/bg-slide-handshake_reduced.jpeg');
+}
+
+@media only screen and (max-width:767px) {
+  div.bg-class-slide-1{
+    background-image: url('../images/@stock/bg-slide-handshake_reduced-mob.jpeg');
+  }
+}
+
+
+div.bg-class-slide-2 {
+  background-image: url('../images/@stock/bg-slide-10.jpg');
+}
+
+@media only screen and (max-width:767px) {
+  div.bg-class-slide-2{
+    background-image: url('../images/@stock/bg-slide-10-mob.jpg');
+  }
+}
+
+
+
+
+
 .slick-slider {
   position: relative;
   display: block;
@@ -1293,6 +1322,28 @@ body.screenshot {
   margin-bottom: 40px;
 }
 .modBoxedTextSlider .box i {
+  color: /* #F9CE06*/ #DB0A5B/*#C20b47*/;
+  font-size: 36px;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  margin-bottom: 30px;
+}
+
+.modBoxedTextSliderStatic .box {
+  padding: 50px 40px 50px;
+  margin: 20px 0px;
+  background: #fff;
+  text-align: center; 
+}
+.modBoxedTextSliderStatic .box h4{
+  
+}
+
+.modBoxedTextSliderStatic .box h3 {
+  margin-bottom: 40px;
+}
+.modBoxedTextSliderStatic .box i {
   color: /* #F9CE06*/ #DB0A5B/*#C20b47*/;
   font-size: 36px;
   width: 48px;
@@ -2457,7 +2508,7 @@ body.screenshot {
   transition: all 0.3s linear;
 }
 .modGallery ul.gallery li a .overlay .thumb-info {
-  top: 55%;
+  top: 60%;
   position: relative;
   opacity: 0;
 }
@@ -3530,21 +3581,38 @@ body {
   background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
 }
 
-div.add-pc-capture::before {
+div.intro-bg::before {
+  content: '';
+  background: url(../images/virgule_gd.png) no-repeat;
+  background-position: center center;
+  background-size: 400px; 
+  opacity: .9;
+  height: 360px;
+  margin-bottom: -50px;
+  width: 400px;
+  position: absolute;
+  right: 400px;
+  margin-top: 90px;
+  z-index: -10;
+}
+/*style="background: url(../images/virgule_gd.png) no-repeat; background-position: left center;z-index:-10;"*/
+
+/*div.add-pc-capture::before {
     content: '';
     background: url("../images/@stock/pc-with-capture.png") no-repeat;
     background-position: center center;
     background-size: 400px;
-    opacity: .9;
+    opacity: .8;
     height: 360px;
     margin-bottom: -50px;
     width: 400px;
-    position: absolute;
-    right: -50px;
+    position: absolute; 
+    right: 10px;
     margin-top: 400px;
-    z-index: 0;
+    z-index: -1;
+}*/
 
-}
+
 
 
 
